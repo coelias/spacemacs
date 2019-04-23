@@ -308,4 +308,6 @@ debug-init and load the given list of packages."
       (define-key winum-keymap (kbd "M-7") 'winum-select-window-7)
       (define-key winum-keymap (kbd "M-8") 'winum-select-window-8)
       (define-key winum-keymap (kbd "M-9") 'winum-select-window-9)
+      (define-key winum-keymap "\M-3" nil)
+      (global-set-key (kbd "M-3")(lambda () (interactive) (insert "#")))
       (winum-mode))))
